@@ -1,4 +1,4 @@
-# Multiple Regression Analysis Using Airbnb Data
+## Multiple Regression Analysis Using Airbnb Data
 
 The objective of this project is to make onboarding process for Boston homeowners easier by suggesting to them how much they should charge for their property.
 
