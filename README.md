@@ -10,4 +10,4 @@ The dataset is from Airbnb, which includes about 37 features and 3,586 samples. 
 - amenities
 - reviews rating
 
-R is used to build a price model for this project.
+This project is done using R.
