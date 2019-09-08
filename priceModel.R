@@ -90,4 +90,15 @@ ggplot(roomType, aes(x = 1, weight = freq, fill = room_type)) +
     title = "Room Type Distribution",
     x = NULL,
     y = NULL,
-    fill = "Room Type")
+    fill = "Room Type"
+  )
+
+# Count property type
+ggplot(bostonAirbnb, aes(property_type)) +
+  geom_bar() +
+  coord_flip() +
+  scale_y_continuous(breaks = seq(0, 2500, by = 500)) +
+  labs(
+    x = "Property Type",
+    y = "Number of Listings"
+    )
