@@ -64,3 +64,30 @@ bostonAirbnb$bathrooms <- ifelse(is.na(bostonAirbnb$bathrooms) == T,
 bostonAirbnb$beds <- ifelse(is.na(bostonAirbnb$beds) == T, 1, bostonAirbnb$beds)
 bostonAirbnb$bedrooms <- ifelse(is.na(bostonAirbnb$bedrooms) == T,
                                 1, bostonAirbnb$bedrooms)
+bostonAirbnb$review_scores_rating <- ifelse(is.na(bostonAirbnb$
+                                                  review_scores_rating) == T, 91.9,
+                                            bostonAirbnb$review_scores_rating)
+bostonAirbnb$reviews_per_month <- ifelse(is.na(bostonAirbnb$
+                                               reviews_per_month) == T, 1.98,
+                                         bostonAirbnb$reviews_per_month)
+
+# Count room type
+count(bostonAirbnb, "room_type")
+
+roomType <- roomType %>% 
+  mutate(room_type = factor(room_type, levels = c("Entire home/apt",
+                                                  "Private room",
+                                                  "Shared room")),
+         cumulative = cumsum(freq),
+         midpoint = cumulative - freq / 2,
+         label = paste0(room_type, " ", round(freq / sum(freq) * 100, 1) "%"))
+
+ggplot(roomType, aes(x = 1, weight = freq, fill = room_type)) +
+  geom_bar(width = 1, position = "stack") +
+  coord_polar(theta = "y") +
+  geom_text(aes(x = 1.3, y = midpoint, label = label)) +
+  labs(
+    title = "Room Type Distribution",
+    x = NULL,
+    y = NULL,
+    fill = "Room Type")
