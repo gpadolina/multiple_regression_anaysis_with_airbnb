@@ -60,3 +60,7 @@ Trivially, properties with super strict cancellation policy has the highest aver
 As expected, an entire home such as a guesthouse would have one of the highest listing price. Dorms & campers/RVs would have the lowest evidently. But what really stands out in this visual is a boat having the second highest average listing price. Maybe it's a really nice boat.
 
 ---
+
+![Image of Price Histogram](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/priceHistogram.png)
+
+It can be concluded that this histogram is skewed to the right with some outliers listed between $750 and $1000. It's bulked is right around $100 and $250 however as what it should be.
