@@ -57,3 +57,10 @@ bostonAirbnb$room_type <- as.factor(bostonAirbnb$room_type)
 
 # Convert characters that should be numeric
 bostonAirbnb$extra_people <- as.numeric(sub("\\$", " ", bostonAirbnb$extra_people))
+
+# Replace missing values with the median value
+bostonAirbnb$bathrooms <- ifelse(is.na(bostonAirbnb$bathrooms) == T,
+                                 1, bostonAirbnb$bathrooms)
+bostonAirbnb$beds <- ifelse(is.na(bostonAirbnb$beds) == T, 1, bostonAirbnb$beds)
+bostonAirbnb$bedrooms <- ifelse(is.na(bostonAirbnb$bedrooms) == T,
+                                1, bostonAirbnb$bedrooms)
