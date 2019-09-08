@@ -47,4 +47,10 @@ bostonAirbnb$price <- sub(",", " ", bostonAirbnb$price)
 bostonAirbnb$price <- as.integer(bostonAirbnb$price)
 
 # Convert categorical variables into factors
-boston
+bostonAirbnb$cancellation_policy <- as.factor(bostonAirbnb$cancellation_policy)
+bostonAirbnb$host_is_superhost <- as.factor(bostonAirbnb$host_is_superhost)
+bostonAirbnb$instant_bookable <- as.factor(bostonAirbnb$instant_bookable)
+bostonAirbnb$neighbourhood_cleansed <- as.factor(
+  bostonAirbnb$neighbourhood_cleansed)
+bostonAirbnb$property_type <- as.factor(bostonAirbnb$property_type)
+bostonAirbnb$room_type <- as.factor(bostonAirbnb$room_type)
