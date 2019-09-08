@@ -40,3 +40,8 @@ bostonAirbnb$Pets <- ifelse(grepl("Cat", dummyAmenities,
 bostonAirbnb$Kitchen <- ifelse(grepl("Kitchen", dummyAmenities,
                                      ignore.case = T) == T, 1, 0)
 bostonAirbnb[, c("amenities")] <- NULL
+
+# Convert variables to appropriate data types
+bostonAirbnb$price <- sub("\\$", " ", bostonAirbnb$price)
+bostonAirbnb$price <- sub(",", " ", bostonAirbnb$price)
+bostonAirbnb$price <- as.integer(bostonAirbnb$price)
