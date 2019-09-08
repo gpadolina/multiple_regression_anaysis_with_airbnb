@@ -132,3 +132,14 @@ ggplot(bostonAirbnb, aes(cancellation_policy, price, fill = cancellation_policy)
     x = "Cancellation Policy",
     y = "Average Price"
     )
+
+# Average price by property type
+ggplot(bostonAirbnb, aes(x = factor(property_type), y = price,
+                         fill = property_type)) +
+  stat_summary(fun.y = "mean", geom = "bar", show.legend = FALSE) +
+  coord_flip() +
+  labs(
+    title = "Average Price by Property Type",
+    x = "Property Type",
+    y = "Average Price"
+    )
