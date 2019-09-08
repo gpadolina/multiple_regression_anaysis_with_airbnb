@@ -112,3 +112,14 @@ ggplot(bostonAirbnb, aes(x = factor(bed_type), y = price, fill = bed_type)) +
     y = "Average Price",
     fill = "Bed Type"
     )
+
+# Average price by neighborhood
+ggplot(bostonAirbnb, aes(x = factor(neighbourhood), y = price,
+                         fill = neighbourhood)) +
+  stat_summary(fun.y = "mean", geom = "bar", show.legend = FALSE) +
+  coord_flip() +
+  labs(
+    title = "Average price by neighbourhood",
+    x = "Neighborhood",
+    y = "Average Price"
+    )
