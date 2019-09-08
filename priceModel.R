@@ -102,3 +102,13 @@ ggplot(bostonAirbnb, aes(property_type)) +
     x = "Property Type",
     y = "Number of Listings"
     )
+
+# Average price by bed type
+ggplot(bostonAirbnb, aes(x = factor(bed_type), y = price, fill = bed_type)) +
+  stat_summary(fun.y = "mean", geom = "bar") +
+  labs(
+    title = "Average price by bed type",
+    x = "Bed Type",
+    y = "Average Price",
+    fill = "Bed Type"
+    )
