@@ -15,4 +15,4 @@ This project is done using R and I will follow Google's R style guide.
 ### Analysis 1
 #### What causes the diffence between prices in listings?
 *Data Wrangling*: Please see the cleaned [data](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/priceModel.R)
-that was I produced by leveraging dplyr and tidyr libraries using R.
+that I produced by leveraging dplyr and tidyr libraries using R.
