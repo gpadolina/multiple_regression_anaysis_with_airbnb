@@ -184,3 +184,13 @@ labs(
 anova2 <- aov(review_scores_rating ~ bed_type, bostonAirbnb)
 
 summary(anova2)
+
+# Price model
+priceModel <- lm(price ~ AirCondition + bathrooms + beds + guests_included +
+                 host_since + Internet + Kitchen + Pets + TV + 
+                 reviews_per_month + review_scores_rating + 
+                 as.factor(bed_type) + as.factor(cancellation_policy) +
+                 as.factor(neighbourhood_cleansed) + as.factor(property_type) +
+                 as.factor(room_type), bostonAirbnb)
+
+summary(priceModel)
