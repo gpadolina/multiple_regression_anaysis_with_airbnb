@@ -165,3 +165,8 @@ ggplot(bostonAirbnb, aes(cancellation_policy, reviews_per_month)) +
     y = "Bookings Per Month",
     x = "Cancellation Policy"
     )
+
+# Analysis of variance (ANOVA)
+anova <- aov(reviews_per_month ~ cancellation_policy, bostonAirbnb)
+
+summary(anova)
