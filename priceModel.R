@@ -24,3 +24,10 @@ grep("url", names(bostonAirbnb))
 bostonAirbnb[, names(bostonAirbnb[(duplicated(t(bostonAirbnb)))])] <- NULL
 
 # Create dummy variables for important amenities
+dummyAmenities <- bostonAirbnb$amenities
+bostonAirbnb$TV <- ifelse(grepl("TV", dummyAmenities,
+                                ignore.case = T) == T, 1, 0)
+bostonAirbnb$Internet <- ifelse(grepl("Internet", dummyAmenities,
+                                      ignore.case = T) == T, 1, 0)
+bostonAirbnb$AirCondition <- ifelse(grepl("Conditioning", dummyAmenities,
+                                          ignore.case = T) == T, 1, 0)
