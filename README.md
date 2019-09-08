@@ -25,3 +25,4 @@ Here, I categorized the listings based on their room type.
 | Shared room | 80 |
 
 ![Image of Room Type](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/roomType.png)
+
