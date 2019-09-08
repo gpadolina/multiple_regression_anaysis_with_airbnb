@@ -16,3 +16,10 @@ This project is done using R and I will follow Google's R style guide.
 #### What causes the diffence between prices in listings?
 *Data Wrangling*: Please see the following [data](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/priceModel.R) transformation that I made by leveraging dplyr and tidyr libraries using R. I will use the cleaned data for the rest of the analysis.
 
+Here, I categorized the listings based on their room type.
+
+| Room Type | Frequency |
+| --- | --- |
+| Entire home/apt | 2127 |
+| Private room | 1378 |
+| Shared room | 80 |
