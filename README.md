@@ -52,3 +52,7 @@ If you're familiar with Boston, you would know that Mattapan has been constantly
 ![Image of Average Price by Cancellation Policy](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPricebyCancellationPolicy.png)
 
 Trivially, properties with super strict cancellation policy has the highest average price which makes them positively correlated.
+
+![Image of Average Price by Property Type](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPriceByPropertyType.png)
+
+As expected, an entire home such as a guesthouse would have one of the highest listing price. Dorms & campers/RVs would have the lowest evidently. But what really stands in this visual is a boat having the second highest average listing price. Maybe it's a really nice boat.
