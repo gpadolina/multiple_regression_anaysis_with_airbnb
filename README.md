@@ -24,7 +24,7 @@ Here, I categorized the listings based on their room type.
 | Private room | 1378 |
 | Shared room | 80 |
 
-![Image of Room Type]
+![Image of Room Type](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/roomType..png)
 
 Using ggplot, I graphed the property type frequency.
 
