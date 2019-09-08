@@ -41,4 +41,4 @@ As for the property type, apartments and houses take up the majority of the list
 
 I will analyze the average price by a variety of categorical variables.
 
-![Image of Average Price by Bed Type]
+![Image of Average Price by Bed Type](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPriceByBedType..png)
