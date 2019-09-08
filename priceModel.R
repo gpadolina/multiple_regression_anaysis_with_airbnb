@@ -179,3 +179,8 @@ labs(
   x = "Bed Type",
   y = "Review Scores Rating"
   )
+
+# Analysis of variance (ANOVA)
+anova2 <- aov(review_scores_rating ~ bed_type, bostonAirbnb)
+
+summary(anova2)
