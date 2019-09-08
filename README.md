@@ -49,6 +49,8 @@ Comfort is one of the most important factors when choosing a bed type. As can be
 
 If you're familiar with Boston, you would know that Mattapan has been constantly ranked as one of the not so nice neighborhoods. Consequently, it has one of the lowest average price by neighborhood. Unsurpringly, Harvard Square and Financial District has some of the highest due to being a tourist attraction and a business district.
 
+Back Bay and Allston-Brighton both each have an outlier almost or reaching the maximum listing price.
+
 ---
 
 ![Image of Average Price by Cancellation Policy](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPricebyCancellationPolicy.png)
