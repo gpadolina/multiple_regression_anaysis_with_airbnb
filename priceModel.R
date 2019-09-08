@@ -54,3 +54,6 @@ bostonAirbnb$neighbourhood_cleansed <- as.factor(
   bostonAirbnb$neighbourhood_cleansed)
 bostonAirbnb$property_type <- as.factor(bostonAirbnb$property_type)
 bostonAirbnb$room_type <- as.factor(bostonAirbnb$room_type)
+
+# Convert characters that should be numeric
+bostonAirbnb$extra_people <- as.numeric(sub("\\$", " ", bostonAirbnb$extra_people))
