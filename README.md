@@ -66,3 +66,13 @@ As expected, an entire home such as a guesthouse would have one of the highest l
 ![Image of Price Histogram](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/priceHistogram.png)
 
 It can be concluded that this histogram is skewed to the right with some outliers listed between $750 and $1000. It's bulked is right around $100 and $250 however as what one would expect.
+
+---
+
+### Analysis 2
+#### Is booking rate different for different cancellation policies?
+
+I will use hypothesis testing here. Here we have:
+* H0: Cancellation policy doesn't affect the average booking rate.
+* H1: Cancellation policy affects the booking rate.
+When a place is booked, it can be expected that it would then have a review following the stay. Thus, I will use reviews per month to measure the booking rate of a listing.
