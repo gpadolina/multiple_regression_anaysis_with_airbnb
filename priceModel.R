@@ -31,3 +31,12 @@ bostonAirbnb$Internet <- ifelse(grepl("Internet", dummyAmenities,
                                       ignore.case = T) == T, 1, 0)
 bostonAirbnb$AirCondition <- ifelse(grepl("Conditioning", dummyAmenities,
                                           ignore.case = T) == T, 1, 0)
+bostonAirbnb$Pets <- ifelse(grepl("Pet", dummyAmenities,
+                                  ignore.case = T) == T, 1, 0)
+bostonAirbnb$Pets <- ifelse(grepl("Dog", dummyAmenities,
+                                  ignore.case = T) == T, 1, bostonAirbnb$Pets)
+bostonAirbnb$Pets <- ifelse(grepl("Cat", dummyAmenities,
+                                  ignore.case = T) == T, 1, bostonAirbnb$Pets)
+bostonAirbnb$Kitchen <- ifelse(grepl("Kitchen", dummyAmenities,
+                                     ignore.case = T) == T, 1, 0)
+bostonAirbnb[, c("amenities")] <- NULL
