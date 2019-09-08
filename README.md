@@ -78,3 +78,5 @@ I will use hypothesis testing here. Here we have:
 When a place is booked, it can be expected that it would then have a review following the stay. Thus, I will use reviews per month to measure the booking rate of a listing.
 
 ![Image of Cancellation Policy on Booking](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/cancellationPolicyonBookings.png)
+
+This is almost simmilar to the visual of cancellation policy on average price. It can be seen that the cancellation policy has an effect on booking rates. Super strict has the lowest mean booking rate while moderate and strict has the highest. To further support this claim, I run an analysis of variance (ANOVA).
