@@ -44,3 +44,5 @@ I will analyze the average price by a variety of categorical variables.
 ![Image of Average Price by Bed Type](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPriceByBedType..png)
 
 Comfort is one of the most important factors when choosing a bed type. As can be expected, real beds have the highest average price amongst all bed types and airbeds has the lowest.  Couches and pull-out sofas almost has the same average price because they're quiet similar. However, couches might be a better choice for comfort while pull-out sofa can fit more but tend to be on the firm side to conceal the bed frame.
+
+![Image of Average Price by Neighborhood](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPriceByNeighbourhood.png)
