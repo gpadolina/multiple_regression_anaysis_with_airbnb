@@ -76,3 +76,5 @@ I will use hypothesis testing here. Here we have:
 * H0: Cancellation policy doesn't affect the average booking rate.
 * H1: Cancellation policy affects the booking rate.
 When a place is booked, it can be expected that it would then have a review following the stay. Thus, I will use reviews per month to measure the booking rate of a listing.
+
+![Image of Cancellation Policy on Booking](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/cancellationPolicyonBookings.png)
