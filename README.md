@@ -32,3 +32,5 @@ Using ggplot, I graphed the property type frequency.
 
 #### Result
 It can be concluded that people are more inclined towards listing a private room or an entire home. Perhaps a lot of people have extra rooms that they would rather put to use than be empty. In contrast, shared rooms has the least frequency. It's safe to assume that owners and guests wouldn't want to share a room with people they don't know.
+
+As for the property type, apartments and houses take up the majority of the listings as one would expect compared the uncommon ones such as a camper or an RV and a boat.
