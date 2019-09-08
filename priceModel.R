@@ -72,7 +72,7 @@ bostonAirbnb$reviews_per_month <- ifelse(is.na(bostonAirbnb$
                                          bostonAirbnb$reviews_per_month)
 
 # Count room type
-count(bostonAirbnb, "room_type")
+roomType <- count(bostonAirbnb, "room_type")
 
 roomType <- roomType %>% 
   mutate(room_type = factor(room_type, levels = c("Entire home/apt",
