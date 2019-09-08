@@ -79,4 +79,22 @@ When a place is booked, it can be expected that it would then have a review foll
 
 ![Image of Cancellation Policy on Booking](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/cancellationPolicyonBookings.png)
 
-This is almost simmilar to the visual of cancellation policy on average price. It can be seen that the cancellation policy has an effect on booking rates. Super strict has the lowest mean booking rate while moderate and strict has the highest. To further support this claim, I run an analysis of variance (ANOVA).
+This is almost simmilar to the visual of cancellation policy on average price. It can be seen that the cancellation policy has an effect on booking rates. Super strict has the lowest mean booking rate while moderate and strict has the highest. To further support this claim, I will run an analysis of variance (ANOVA).
+```
+anova <- aov(reviews_per_month ~ cancellation_policy, bostonAirbnb)
+
+summary(anova)
+```
+
+| | Df | Sum Sq | Mean Sq | F value |
+| --- | --- | --- | --- | --- |
+| cancellation_policy | 3 | 294 | 98.02 | 28.25 |
+| Residuals | 3581 | 12423 | 3.47 | |
+| | Pr(>F) | | | |
+| cancellation_policy | <2e-16 | *** |
+| Residuals | | | | |
+
+Signif. codes:
+0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Since the p-value is less than the significance level of 0.05, it can be concluded that there are significant differences in differen cancellation policies. Therefore, null hypothesis can be rejected.
