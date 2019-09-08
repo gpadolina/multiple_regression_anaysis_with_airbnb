@@ -51,3 +51,4 @@ If you're familiar with Boston, you would know that Mattapan has been constantly
 
 ![Image of Average Price by Cancellation Policy](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPricebyCancellationPolicy.png)
 
+Trivially, properties with super strict cancellation policy has the highest average price which makes them positively correlated.
