@@ -123,3 +123,12 @@ ggplot(bostonAirbnb, aes(x = factor(neighbourhood), y = price,
     x = "Neighborhood",
     y = "Average Price"
     )
+
+# Average price by bed type & cancellation policy
+ggplot(bostonAirbnb, aes(cancellation_policy, price, fill = cancellation_policy)) +
+  stat_summary(fun.y = "mean", geom_bar = "bar", show.legend = FALSE) +
+  labs(
+    title = "Average Price by Cancellation Policy",
+    x = "Cancellation Policy",
+    y = "Average Price"
+    )
