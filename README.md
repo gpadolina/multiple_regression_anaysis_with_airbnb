@@ -14,3 +14,4 @@ This project is done using R and I will follow Google's R style guide.
 
 ### Analysis 1
 #### What causes the diffence between prices in listings?
+*Data Wrangling*: Please see the cleaned data
