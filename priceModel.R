@@ -170,3 +170,12 @@ ggplot(bostonAirbnb, aes(cancellation_policy, reviews_per_month)) +
 anova <- aov(reviews_per_month ~ cancellation_policy, bostonAirbnb)
 
 summary(anova)
+
+# Box-plot
+ggplot(bostonAirbnb, aes(bed_type, review_scores_rating)) +
+  geom_boxplot(aes(color = bed_type)) +
+labs(
+  title = "Review Scores Rating Based on Bed Type",
+  x = "Bed Type",
+  y = "Review Scores Rating"
+  )
