@@ -143,3 +143,12 @@ ggplot(bostonAirbnb, aes(x = factor(property_type), y = price,
     x = "Property Type",
     y = "Average Price"
     )
+
+# Outliers
+ggplot(bostonAirbnb, aes(price)) +
+  geom_histogram() +
+  labs(
+    title = "Price Histogram",
+    x = "Price",
+    y = "Count"
+    )
