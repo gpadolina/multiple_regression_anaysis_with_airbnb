@@ -25,23 +25,26 @@ bostonAirbnb[, names(bostonAirbnb[(duplicated(t(bostonAirbnb)))])] <- NULL
 
 # Create dummy variables for important amenities
 dummyAmenities <- bostonAirbnb$amenities
+bostonAirbnb$Kitchen <- ifelse(grepl("Kitchen", dummyAmenities,
+                                     ignore.case = T) == T, 1, 0)
+bostonAirbnb$AirCondition <- ifelse(grepl("Conditioning", dummyAmenities,
+                                          ignore.case = T) == T, 1, 0)
 bostonAirbnb$TV <- ifelse(grepl("TV", dummyAmenities,
                                 ignore.case = T) == T, 1, 0)
 bostonAirbnb$Internet <- ifelse(grepl("Internet", dummyAmenities,
                                       ignore.case = T) == T, 1, 0)
-bostonAirbnb$AirCondition <- ifelse(grepl("Conditioning", dummyAmenities,
-                                          ignore.case = T) == T, 1, 0)
 bostonAirbnb$Pets <- ifelse(grepl("Pet", dummyAmenities,
                                   ignore.case = T) == T, 1, 0)
 bostonAirbnb$Pets <- ifelse(grepl("Dog", dummyAmenities,
                                   ignore.case = T) == T, 1, bostonAirbnb$Pets)
 bostonAirbnb$Pets <- ifelse(grepl("Cat", dummyAmenities,
                                   ignore.case = T) == T, 1, bostonAirbnb$Pets)
-bostonAirbnb$Kitchen <- ifelse(grepl("Kitchen", dummyAmenities,
-                                     ignore.case = T) == T, 1, 0)
 bostonAirbnb[, c("amenities")] <- NULL
 
 # Convert variables to appropriate data types
 bostonAirbnb$price <- sub("\\$", " ", bostonAirbnb$price)
 bostonAirbnb$price <- sub(",", " ", bostonAirbnb$price)
 bostonAirbnb$price <- as.integer(bostonAirbnb$price)
+
+# Convert categorical variables into factors
+boston
