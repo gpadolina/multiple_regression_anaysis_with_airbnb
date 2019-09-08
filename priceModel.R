@@ -152,3 +152,16 @@ ggplot(bostonAirbnb, aes(price)) +
     x = "Price",
     y = "Count"
     )
+
+# Box-plot
+ggboxplot(bostonAirbnb, x = "cancellation_policy",
+          y = "reviews_per_month", color = "cancellation_policy",
+          ylab = "Bookings Per Month", xlab = "Cancellation Policy")
+
+ggplot(bostonAirbnb, aes(cancellation_policy, reviews_per_month)) +
+  geom_boxplot(aes(color = cancellation_policy)) +
+  labs(
+    title = "Cancellation Policy Per Month",
+    y = "Bookings Per Month",
+    x = "Cancellation Policy"
+    )
