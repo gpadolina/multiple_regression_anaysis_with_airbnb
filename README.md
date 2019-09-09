@@ -119,3 +119,7 @@ anova <- aov(review_scores_rating ~ bed_type, bostonAirbnb)
 
 summary(anova)
 ```
+| | Df | Sum Sq | Mean Sq | F value | Pr(>F) |
+| --- | --- | --- | --- | --- | --- |
+| bed_type | 4 | 83 | 20.67 | 0.294 | 0.882 |
+| Residuals | 3580 | 251671 | 70.30 | | |
