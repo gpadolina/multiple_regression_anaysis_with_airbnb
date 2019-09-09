@@ -107,4 +107,5 @@ Since the p-value is less than the significance level of 0.05, it can be conclud
 As already known, bed type has an effect on average price of listings. But lets see if it also affects the review scores. Here we have:
 * H0: Bed type doesn't affect the review scores.
 * H1: Bed type affects the review scores.
+
 As stated earlier, comfort is one of the most important factors when choosing a bed type. Therefore, lets assume that bed type should have affect the review scores.
