@@ -102,3 +102,4 @@ Since the p-value is less than the significance level of 0.05, it can be conclud
 ---
 
 ### Analysis 3
+#### Does the bed type affect the review scores?
