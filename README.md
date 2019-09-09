@@ -80,7 +80,7 @@ When a place is booked, it can be expected that it would then have a review foll
 
 ![Image of Cancellation Policy on Booking](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/cancellationPolicyonBookings.png)
 
-This is almost simmilar to the visual of cancellation policy on average price. It can be seen that the cancellation policy has an effect on booking rates. Super strict has the lowest mean booking rate while moderate and strict has the highest. To further support this claim, I will run an analysis of variance (ANOVA).
+This is almost similar to the visual of cancellation policy on average price. It can be seen that the cancellation policy has an effect on booking rates. Super strict has the lowest mean booking rate while moderate and strict has the highest. To further support this claim, I will run an analysis of variance (ANOVA).
 ```
 anova <- aov(reviews_per_month ~ cancellation_policy, bostonAirbnb)
 
@@ -112,3 +112,10 @@ As already known, bed type has an effect on average price of listings. But lets 
 As stated earlier, comfort is one of the most important factors when choosing a bed type. Therefore, lets assume that bed type should have affect the review scores.
 
 ![Image of Bed Type on Review Scores Rating](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/bedTypeonReviewScoresRating.png)
+
+As the graph suggests, there is almost no differences in review score ratings for different bed types. But some outliers are very surprising. Lets run an analysis of variance.
+```
+anova <- aov(review_scores_rating ~ bed_type, bostonAirbnb)
+
+summary(anova)
+```
