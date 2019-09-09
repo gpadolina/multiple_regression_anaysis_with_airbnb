@@ -123,3 +123,20 @@ summary(anova)
 | --- | --- | --- | --- | --- | --- |
 | bed_type | 4 | 83 | 20.67 | 0.294 | 0.882 |
 | Residuals | 3580 | 251671 | 70.30 | | |
+
+Since the p-value is larger than 0.05, null hypothesis can be accepted that the bed type doesn't affect the review scores contradicting what was expected. However, it just goes to show that review scores are not only based on bed types but on a variety of factors.
+
+---
+
+### Analysis 4
+#### Build a price model that would make onboarding easier for property owners.
+```
+priceModel <- lm(price ~ AirCondition + bathrooms + beds + guests_included +
+                 host_since + Internet + Kitchen + Pets + TV + 
+                 reviews_per_month + review_scores_rating + 
+                 as.factor(bed_type) + as.factor(cancellation_policy) +
+                 as.factor(neighbourhood_cleansed) + as.factor(property_type) +
+                 as.factor(room_type), bostonAirbnb)
+
+summary(priceModel)
+```
