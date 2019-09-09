@@ -140,3 +140,13 @@ priceModel <- lm(price ~ AirCondition + bathrooms + beds + guests_included +
 
 summary(priceModel)
 ```
+Part of the result is the following:
+
+Residuals:
+| Min | 1Q | Median | 3Q | Max
+| --- | --- | --- | --- | --- |
+| -316.89 | -22.16 | 0.00 | 17.81 | 611.80 |
+
+Residual standard error: 65.13 on 2236 degrees of freedom
+Multiple R-squared: 0.7871, Adjusted R-squared: 0.66
+F-statistic: 6.191 on 1335 and 2236 DF, p-value: < 2.2e-16
