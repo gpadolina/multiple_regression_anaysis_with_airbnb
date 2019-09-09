@@ -143,6 +143,7 @@ summary(priceModel)
 Part of the result is the following:
 
 Residuals:
+
 | Min | 1Q | Median | 3Q | Max
 | --- | --- | --- | --- | --- |
 | -316.89 | -22.16 | 0.00 | 17.81 | 611.80 |
