@@ -98,3 +98,7 @@ Signif. codes:
 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Since the p-value is less than the significance level of 0.05, it can be concluded that there are significant differences in differen cancellation policies. Therefore, null hypothesis can be rejected.
+
+---
+
+### Analysis 3
