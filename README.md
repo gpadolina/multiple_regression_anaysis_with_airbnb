@@ -75,6 +75,7 @@ It can be concluded that this histogram is skewed to the right with some outlier
 I will use hypothesis testing here. Here we have:
 * H0: Cancellation policy doesn't affect the average booking rate.
 * H1: Cancellation policy affects the booking rate.
+
 When a place is booked, it can be expected that it would then have a review following the stay. Thus, I will use reviews per month to measure the booking rate of a listing.
 
 ![Image of Cancellation Policy on Booking](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/cancellationPolicyonBookings.png)
@@ -109,3 +110,5 @@ As already known, bed type has an effect on average price of listings. But lets 
 * H1: Bed type affects the review scores.
 
 As stated earlier, comfort is one of the most important factors when choosing a bed type. Therefore, lets assume that bed type should have affect the review scores.
+
+![Image of Bed Type on Review Scores Rating](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/bedTypeonReviewScoresRating.png)
