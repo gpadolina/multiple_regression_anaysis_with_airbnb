@@ -140,7 +140,7 @@ priceModel <- lm(price ~ AirCondition + bathrooms + beds + guests_included +
 
 summary(priceModel)
 ```
-Part of the result is the following:
+The model is fairly long but some important statistics are the following:
 
 Residuals:
 
