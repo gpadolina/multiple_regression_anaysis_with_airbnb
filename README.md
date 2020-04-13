@@ -57,7 +57,7 @@ Back Bay and Allston-Brighton both each have an outlier almost or reaching the m
 
 Trivially, properties with super strict cancellation policy has the highest average price which makes them positively correlated.
 
-![Image of Average Price by Property Type](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPriceByPropertyType.png)
+![Image of Average Price by Property Type](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/Average%20price%20by%20property%20type.jpg)
 
 As expected, an entire home such as a guesthouse would have one of the highest listing price. Dorms & campers/RVs would have the lowest evidently. But what really stands out in this visual is a boat having the second highest average listing price. Maybe it's a really nice boat.
 
