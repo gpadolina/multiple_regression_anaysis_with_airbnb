@@ -30,7 +30,7 @@ Here, I categorized the listings based on their room type.
 
 Using ggplot, I graphed the property type frequency.
 
-![Image of Property Type](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/propertyType.png)
+![Image of Property Type](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/Property%20Type%20Frequency.jpg)
 
 #### Result
 It can be concluded that people are more inclined towards listing a private room or an entire home. Perhaps a lot of people have extra rooms that they would rather put to use than be empty. In contrast, shared rooms has the least frequency. It's safe to assume that owners and guests wouldn't want to share a room with people they don't know.
