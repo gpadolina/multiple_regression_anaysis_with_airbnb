@@ -53,7 +53,7 @@ Back Bay and Allston-Brighton both each have an outlier almost or reaching the m
 
 ---
 
-![Image of Average Price by Cancellation Policy](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPricebyCancellationPolicy.png)
+![Image of Average Price by Cancellation Policy](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/Average%20price%20by%20cancellation%20policy.jpg)
 
 Trivially, properties with super strict cancellation policy has the highest average price which makes them positively correlated.
 
