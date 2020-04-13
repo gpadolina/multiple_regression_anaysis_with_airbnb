@@ -45,7 +45,7 @@ I will analyze the average price by a variety of categorical variables.
 
 Comfort is one of the most important factors when choosing a bed type. As can be expected, real beds have the highest average price amongst all bed types and airbeds has the lowest.  Couches and pull-out sofas almost has the same average price because they're quiet similar. However, couches might be a better choice for comfort while pull-out sofa can fit more but tend to be on the firm side to conceal the bed frame.
 
-![Image of Average Price by Neighborhood](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/avgPriceByNeighborhood.png)
+![Image of Average Price by Neighborhood](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/Average%20Price%20by%20Neighborhood.jpeg)
 
 If you're familiar with Boston, you would know that Mattapan has been constantly ranked as one of the not so nice neighborhoods. Consequently, it has one of the lowest average price by neighborhood. Unsurpringly, Harvard Square and Financial District has some of the highest due to being a tourist attraction and a business district.
 
