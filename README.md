@@ -87,13 +87,10 @@ anova <- aov(reviews_per_month ~ cancellation_policy, bostonAirbnb)
 summary(anova)
 ```
 
-| | Df | Sum Sq | Mean Sq | F value |
-| --- | --- | --- | --- | --- |
-| cancellation_policy | 3 | 294 | 98.02 | 28.25 |
+| | Df | Sum Sq | Mean Sq | F value | Pr(>F) |
+| --- | --- | --- | --- | --- | --- |
+| cancellation_policy | 3 | 294 | 98.02 | 28.25 | <2e16 |
 | Residuals | 3581 | 12423 | 3.47 | |
-| | Pr(>F) | | | |
-| cancellation_policy | <2e-16 | *** |
-| Residuals | | | | |
 
 Signif. codes:
 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
