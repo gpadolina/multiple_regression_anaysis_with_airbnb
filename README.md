@@ -108,7 +108,7 @@ As already known, bed type has an effect on average price of listings. But lets 
 
 As stated earlier, comfort is one of the most important factors when choosing a bed type. Therefore, lets assume that bed type should have affect the review scores.
 
-![Image of Bed Type on Review Scores Rating](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/bedTypeonReviewScoresRating.png)
+![Image of Bed Type on Review Scores Rating](https://github.com/gpadolina/multipleRegressionAnaysisWithAirbnb/blob/master/plots/Ratings%20on%20bed%20types.jpeg)
 
 As the graph suggests, there is almost no differences in review score ratings for different bed types. But some outliers are very surprising. Lets run an analysis of variance.
 ```
